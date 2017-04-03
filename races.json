@@ -1,0 +1,15 @@
+{
+"RaceList": [
+{"name":"Dark Elve","movement":7,"FightDice":3,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":8,"SilverHeart":1,"TotalWounds":5,"StartMana":10,"MaxMana":14,"specialRules":[]},
+{"name":"High Elve","movement":8,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":9,"SilverHeart":1,"TotalWounds":5,"StartMana":11,"MaxMana":16,"specialRules":[]},
+{"name":"Wood Elve","movement":8,"FightDice":3,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":9,"SilverHeart":1,"TotalWounds":5,"StartMana":10,"MaxMana":14,"specialRules":[]},
+{"name":"Dwarf","movement":6,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":6,"SilverHeart":2,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":[]},
+{"name":"Human","movement":7,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":8,"MaxMana":12,"specialRules":["Racial Trait: Human Will"]},
+{"name":"Hafling","movement":6,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":["Racial Trait: Small"]},
+{"name":"Gladewalker","movement":6,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":5,"SilverHeart":2,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":["Racial Affinty: Earth"]},
+{"name":"Naiad","movement":8,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":8,"MaxMana":12,"specialRules":["Racial Affinty: Water"]},
+{"name":"Salamander","movement":5,"FightDice":3,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":4,"SilverHeart":2,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":["Racial Affinty: Fire"]},
+{"name":"Sylph","movement":8,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":11,"MaxMana":16,"specialRules":["Racial Affinty: Air"]},
+{"name":"Deamonkin","movement":7,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":6,"SilverHeart":1,"TotalWounds":5,"StartMana":8,"MaxMana":12,"specialRules":["Racial Affinty: Fire"]}
+]
+}
