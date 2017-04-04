@@ -1,15 +1,16 @@
 {
 "RaceList": [
-{"name":"Dark Elve","movement":7,"FightDice":3,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":8,"SilverHeart":1,"TotalWounds":5,"StartMana":10,"MaxMana":14,"specialRules":[]},
-{"name":"High Elve","movement":8,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":9,"SilverHeart":1,"TotalWounds":5,"StartMana":11,"MaxMana":16,"specialRules":[]},
-{"name":"Wood Elve","movement":8,"FightDice":3,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":9,"SilverHeart":1,"TotalWounds":5,"StartMana":10,"MaxMana":14,"specialRules":[]},
-{"name":"Dwarf","movement":6,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":6,"SilverHeart":2,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":[]},
-{"name":"Human","movement":7,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":8,"MaxMana":12,"specialRules":["Racial Trait: Human Will"]},
-{"name":"Hafling","movement":6,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":["Racial Trait: Small"]},
-{"name":"Gladewalker","movement":6,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":5,"SilverHeart":2,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":["Racial Affinty: Earth"]},
-{"name":"Naiad","movement":8,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":8,"MaxMana":12,"specialRules":["Racial Affinty: Water"]},
-{"name":"Salamander","movement":5,"FightDice":3,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":4,"SilverHeart":2,"TotalWounds":5,"StartMana":7,"MaxMana":10,"specialRules":["Racial Affinty: Fire"]},
-{"name":"Sylph","movement":8,"FightDice":2,"rangeDice":0,"defenceDice":3,"armour":1,"initiative":7,"SilverHeart":1,"TotalWounds":5,"StartMana":11,"MaxMana":16,"specialRules":["Racial Affinty: Air"]},
-{"name":"Deamonkin","movement":7,"FightDice":2,"rangeDice":0,"defenceDice":2,"armour":1,"initiative":6,"SilverHeart":1,"TotalWounds":5,"StartMana":8,"MaxMana":12,"specialRules":["Racial Affinty: Fire"]}
+{"name":"Select Race","movement":0,"fight_dice":0,"ranged_dice":0,"defence_dice":0,"armour":0,"initiative":0,"silver_heart":0,"TotalWounds":0,"start_mana":0,"max_mana":0,"specialRules":[],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Dark Elf","movement":7,"fight_dice":3,"ranged_dice":0,"defence_dice":2,"armour":1,"initiative":8,"silver_heart":1,"TotalWounds":5,"start_mana":10,"max_mana":14,"specialRules":[],"tooltip":"hello everypone, nothing here yet"},
+{"name":"High Elf","movement":8,"fight_dice":2,"ranged_dice":0,"defence_dice":2,"armour":1,"initiative":9,"silver_heart":1,"TotalWounds":5,"start_mana":11,"max_mana":16,"specialRules":[],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Wood Elf","movement":8,"fight_dice":3,"ranged_dice":0,"defence_dice":2,"armour":1,"initiative":9,"silver_heart":1,"TotalWounds":5,"start_mana":10,"max_mana":14,"specialRules":[],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Dwarf","movement":6,"fight_dice":2,"ranged_dice":0,"defence_dice":3,"armour":1,"initiative":6,"silver_heart":2,"TotalWounds":5,"start_mana":7,"max_mana":10,"specialRules":[],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Human","movement":7,"fight_dice":2,"ranged_dice":0,"defence_dice":3,"armour":1,"initiative":7,"silver_heart":1,"TotalWounds":5,"start_mana":8,"max_mana":12,"specialRules":["Racial Trait: Human Will"],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Halfling","movement":6,"fight_dice":2,"ranged_dice":0,"defence_dice":2,"armour":1,"initiative":7,"silver_heart":1,"TotalWounds":5,"start_mana":7,"max_mana":10,"specialRules":["Racial Trait: Small"],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Gladewalker","movement":6,"fight_dice":2,"ranged_dice":0,"defence_dice":2,"armour":1,"initiative":5,"silver_heart":2,"TotalWounds":5,"start_mana":7,"max_mana":10,"specialRules":["Racial Affinty: Earth"],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Naiad","movement":8,"fight_dice":2,"ranged_dice":0,"defence_dice":3,"armour":1,"initiative":7,"silver_heart":1,"TotalWounds":5,"start_mana":8,"max_mana":12,"specialRules":["Racial Affinty: Water"],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Salamander","movement":5,"fight_dice":3,"ranged_dice":0,"defence_dice":2,"armour":1,"initiative":4,"silver_heart":2,"TotalWounds":5,"start_mana":7,"max_mana":10,"specialRules":["Racial Affinty: Fire"],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Sylph","movement":8,"fight_dice":2,"ranged_dice":0,"defence_dice":3,"armour":1,"initiative":7,"silver_heart":1,"TotalWounds":5,"start_mana":11,"max_mana":16,"specialRules":["Racial Affinty: Air"],"tooltip":"hello everypone, nothing here yet"},
+{"name":"Deamonkin","movement":7,"fight_dice":2,"ranged_dice":0,"defence_dice":2,"armour":1,"initiative":6,"silver_heart":1,"TotalWounds":5,"start_mana":8,"max_mana":12,"specialRules":["Racial Affinty: Fire"],"tooltip":"hello everypone, nothing here yet"}
 ]
 }

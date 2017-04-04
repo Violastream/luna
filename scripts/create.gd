@@ -25,6 +25,7 @@ func _on_save_pressed():
 	char_data["char_armo"] = get_node("stat_edit/stat_disp/armour_disp").get_text()
 	char_data["char_move"] = get_node("stat_edit/stat_disp/movement_disp").get_text()
 	char_data["char_init"] = get_node("stat_edit/stat_disp/init_disp").get_text()
+	char_data["silver_he"] = get_node("stat_edit/stat_labels/s_hearts").get_text()
 	char_data["char_biog"] = get_node("bio").get_text()
 	
 	if save_name.empty():

@@ -25,6 +25,3 @@ func _process():
 		
 		
 		
-
-func _on_create_pressed():
-	pass # replace with function body

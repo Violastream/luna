@@ -23,8 +23,8 @@ func _ready():
 	var size = race_dicts[0].size()
 	
 	while i < size:
-		print(race_dicts[0][i]["name"])
-		print("+++")
+		#print(race_dicts[0][i]["name"])
+		#print("+++")
 
 		
 	#for arr_entry in race_dicts:

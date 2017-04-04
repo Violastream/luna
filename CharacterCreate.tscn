@@ -1,11 +1,15 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=14 format=1]
 
-[ext_resource path="res://create.gd" type="Script" id=1]
+[ext_resource path="res://scripts/create.gd" type="Script" id=1]
 [ext_resource path="res://char_create_font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://char_edit.tres" type="Theme" id=3]
-[ext_resource path="res://disp_code.gd" type="Script" id=4]
-[ext_resource path="res://load_race.gd" type="Script" id=5]
-[ext_resource path="res://bio_font.tres" type="DynamicFont" id=6]
+[ext_resource path="res://scripts/disp_code.gd" type="Script" id=4]
+[ext_resource path="res://scripts/load_race.gd" type="Script" id=5]
+[ext_resource path="res://assets/max_mana.png" type="Texture" id=6]
+[ext_resource path="res://assets/start_mana.png" type="Texture" id=7]
+[ext_resource path="res://assets/r_heart.png" type="Texture" id=8]
+[ext_resource path="res://bio_font.tres" type="DynamicFont" id=9]
+[ext_resource path="res://assets/char_create_background2.png" type="Texture" id=10]
 
 [sub_resource type="Theme" id=1]
 
@@ -29,6 +33,35 @@ margin/top = 0.0
 margin/right = 1030.0
 margin/bottom = 610.0
 
+[node name="save_select" type="Panel" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 330.0
+margin/top = 190.0
+margin/right = 700.0
+margin/bottom = 460.0
+
+[node name="MenuButton" type="MenuButton" parent="save_select"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 372.0
+margin/bottom = 270.0
+toggle_mode = false
+click_on_press = true
+enabled_focus_mode = 0
+shortcut = null
+flat = true
+items = [  ]
+
 [node name="main_char_create" type="Panel" parent="."]
 
 focus/ignore_mouse = false
@@ -37,8 +70,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 1030.0
-margin/bottom = 610.0
+margin/right = 1027.0
+margin/bottom = 604.0
 script/script = ExtResource( 1 )
 
 [node name="char_name" type="Panel" parent="main_char_create"]
@@ -49,8 +82,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 40.0
 margin/top = 40.0
-margin/right = 280.0
-margin/bottom = 80.0
+margin/right = 321.0
+margin/bottom = 88.0
 
 [node name="name_field" type="LineEdit" parent="main_char_create/char_name"]
 
@@ -96,7 +129,7 @@ margin/bottom = 44.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Race"
+text = "Item 0"
 flat = false
 align = 0
 selected = 0
@@ -116,7 +149,6 @@ margin/bottom = 44.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Class"
 flat = false
 align = 0
 selected = -1
@@ -232,6 +264,21 @@ margin/bottom = 298.0
 text = "Initiative:"
 align = 1
 valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="s_hearts" type="Label" parent="main_char_create/stat_edit/stat_labels"]
+
+visibility/visible = false
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -23.0
+margin/top = -153.0
+margin/right = -10.0
+margin/bottom = -115.0
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -355,6 +402,191 @@ focus_mode = 2
 caret/caret_blink = false
 caret/caret_blink_speed = 0.65
 
+[node name="mana" type="Panel" parent="main_char_create/stat_edit/stat_disp"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 266.0
+margin/top = 2.0
+margin/right = 381.0
+margin/bottom = 303.0
+
+[node name="max_mana" type="TextureFrame" parent="main_char_create/stat_edit/stat_disp/mana"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 13.0
+margin/top = 2.0
+margin/right = 93.0
+margin/bottom = 82.0
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 0
+
+[node name="max_mana_label" type="Label" parent="main_char_create/stat_edit/stat_disp/mana/max_mana"]
+
+rect/scale = Vector2( 0.6, 0.6 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -17.0
+margin/top = 85.0
+margin/right = 182.0
+margin/bottom = 123.0
+text = "Maximum Mana"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="max_mana_disp" type="Label" parent="main_char_create/stat_edit/stat_disp/mana/max_mana"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 23.0
+margin/top = 21.0
+margin/right = 63.0
+margin/bottom = 59.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="start_mana" type="TextureFrame" parent="main_char_create/stat_edit/stat_disp/mana"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1.0
+margin/top = 188.0
+margin/right = 103.0
+margin/bottom = 261.0
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 0
+
+[node name="start_mana_label" type="Label" parent="main_char_create/stat_edit/stat_disp/mana/start_mana"]
+
+rect/scale = Vector2( 0.6, 0.6 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -2.0
+margin/top = 84.0
+margin/right = 175.0
+margin/bottom = 122.0
+text = "Starting Mana"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="start_mana_disp" type="Label" parent="main_char_create/stat_edit/stat_disp/mana/start_mana"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 32.0
+margin/top = 26.0
+margin/right = 72.0
+margin/bottom = 64.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="hearts" type="Panel" parent="main_char_create/stat_edit"]
+
+hint/tooltip = "This shows how resilient you character is to attacks.\nWhen your character depletes their silver hearts (marked as gray) you character will be wounded and have one less die for attack and defence."
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 293.0
+margin/top = 60.0
+margin/right = 363.0
+margin/bottom = 360.0
+
+[node name="heart1" type="TextureFrame" parent="main_char_create/stat_edit/hearts"]
+
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = -1.0
+margin/right = 104.0
+margin/bottom = 84.0
+texture = ExtResource( 8 )
+stretch_mode = 0
+
+[node name="heart2" type="TextureFrame" parent="main_char_create/stat_edit/hearts"]
+
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 59.0
+margin/right = 104.0
+margin/bottom = 144.0
+texture = ExtResource( 8 )
+stretch_mode = 0
+
+[node name="heart3" type="TextureFrame" parent="main_char_create/stat_edit/hearts"]
+
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 119.0
+margin/right = 104.0
+margin/bottom = 204.0
+texture = ExtResource( 8 )
+stretch_mode = 0
+
+[node name="heart4" type="TextureFrame" parent="main_char_create/stat_edit/hearts"]
+
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 179.0
+margin/right = 104.0
+margin/bottom = 264.0
+texture = ExtResource( 8 )
+stretch_mode = 0
+
+[node name="heart5" type="TextureFrame" parent="main_char_create/stat_edit/hearts"]
+
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 239.0
+margin/right = 104.0
+margin/bottom = 324.0
+texture = ExtResource( 8 )
+stretch_mode = 0
+
 [node name="save" type="Button" parent="main_char_create"]
 
 focus/ignore_mouse = false
@@ -362,27 +594,27 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = ExtResource( 3 )
-margin/left = 540.0
-margin/top = 530.0
-margin/right = 782.0
-margin/bottom = 574.0
+margin/left = 550.0
+margin/top = 520.0
+margin/right = 792.0
+margin/bottom = 564.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "Save"
 flat = false
 
-[node name="load" type="Button" parent="main_char_create"]
+[node name="back" type="Button" parent="main_char_create"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = ExtResource( 3 )
-margin/left = 270.0
-margin/top = 530.0
-margin/right = 502.0
-margin/bottom = 574.0
+margin/left = 250.0
+margin/top = 520.0
+margin/right = 482.0
+margin/bottom = 564.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -395,11 +627,11 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 640.0
-margin/top = 100.0
-margin/right = 986.0
-margin/bottom = 466.0
-custom_fonts/font = ExtResource( 6 )
+margin/left = 855.0
+margin/top = 106.0
+margin/right = 973.0
+margin/bottom = 469.0
+custom_fonts/font = ExtResource( 9 )
 syntax_highlighting = false
 show_line_numbers = false
 highlight_all_occurrences = false
@@ -414,49 +646,36 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 theme/theme = ExtResource( 3 )
-margin/left = 640.0
-margin/top = 50.0
-margin/right = 980.0
-margin/bottom = 94.0
+margin/left = 746.0
+margin/top = 52.0
+margin/right = 1086.0
+margin/bottom = 96.0
 text = "Biography"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="save_select" type="Panel" parent="."]
+[node name="TextureFrame" type="TextureFrame" parent="."]
 
-visibility/visible = false
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 330.0
-margin/top = 190.0
-margin/right = 700.0
-margin/bottom = 460.0
-
-[node name="MenuButton" type="MenuButton" parent="save_select"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
+rect/scale = Vector2( 0.3, 0.3 )
+focus/ignore_mouse = true
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 3
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 372.0
-margin/bottom = 270.0
-toggle_mode = false
-click_on_press = true
-enabled_focus_mode = 0
-shortcut = null
-flat = true
-items = [  ]
+margin/right = 3414.0
+margin/bottom = 2001.0
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 0
+__meta__ = { "_edit_lock_":true }
 
 [connection signal="item_selected" from="main_char_create/stat_edit/race_select" to="main_char_create/stat_edit" method="_on_race_select_item_selected"]
 
 [connection signal="pressed" from="main_char_create/save" to="main_char_create" method="_on_save_pressed"]
 
-[connection signal="pressed" from="main_char_create/load" to="main_char_create" method="_on_load_pressed"]
+[connection signal="pressed" from="main_char_create/back" to="main_char_create" method="_on_load_pressed"]
 
 
