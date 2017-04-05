@@ -10,10 +10,10 @@
 {"name":"Barbarian","movement":0,"FightDice":3,"rangeDice":0,"defenceDice":0,"armour":1,"initiative":-1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]},
 {"name":"Paladin","movement":-1,"FightDice":2,"rangeDice":0,"defenceDice":0,"armour":2,"initiative":-2,"SilverHeart":1,"TotalWounds":0,"StartMana":1,"MaxMana":2,"specialRules":[]},
 {"name":"Crusader","movement":-1,"FightDice":2,"rangeDice":0,"defenceDice":1,"armour":1,"initiative":-1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]},
-{"name":"Cleric","movement":0,"FightDice":1,"rangeDice":0,"defenceDice":1,"armour":1,"initiative":-1,"SilverHeart":1,"TotalWounds":0,"StartMana":4,"MaxMana":4,"specialRules":[]}
-{"name":"Deamon_Hunter","movement":0,"FightDice":2,"rangeDice":0,"defenceDice":0,"armour":1,"initiative":0,"SilverHeart":2,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]}
-{"name":"Thief","movement":0,"FightDice":1,"rangeDice":2,"defenceDice":0,"armour":1,"initiative":1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]}
-{"name":"Bard","movement":1,"FightDice":1,"rangeDice":0,"defenceDice":1,"armour":1,"initiative":1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]}
+{"name":"Cleric","movement":0,"FightDice":1,"rangeDice":0,"defenceDice":1,"armour":1,"initiative":-1,"SilverHeart":1,"TotalWounds":0,"StartMana":4,"MaxMana":4,"specialRules":[]},
+{"name":"Deamon_Hunter","movement":0,"FightDice":2,"rangeDice":0,"defenceDice":0,"armour":1,"initiative":0,"SilverHeart":2,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]},
+{"name":"Thief","movement":0,"FightDice":1,"rangeDice":2,"defenceDice":0,"armour":1,"initiative":1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]},
+{"name":"Bard","movement":1,"FightDice":1,"rangeDice":0,"defenceDice":1,"armour":1,"initiative":1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]},
 {"name":"Druid","movement":0,"FightDice":1,"rangeDice":0,"defenceDice":1,"armour":0,"initiative":0,"SilverHeart":1,"TotalWounds":0,"StartMana":3,"MaxMana":3,"specialRules":[]}
 ]
 }
