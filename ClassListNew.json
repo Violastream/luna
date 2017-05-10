@@ -1,0 +1,12 @@
+{
+"ClassList": [
+{"name":"Spellsword","movement":-1,"fight_dice":1,"ranged_dice":0,"defence_dice":0,"armour":1,"initiative":-1,"SilverHeart":1,"TotalWounds":0,"StartMana":2,"MaxMana":2,"specialRules":[spellcaster[magicbolt]]},
+{"name":"Wizard","movement":0,"fight_dice":0,"ranged_dice":0,"defence_dice":0,"armour":0,"initiative":0,"SilverHeart":0,"TotalWounds":0,"StartMana":4,"MaxMana":4,"specialRules":[spellcaster[magicbolt,firelance]]},
+{"name":"Warrior","movement":-1,"fight_dice":1,"ranged_dice":0,"defence_dice":1,"armour":2,"initiative":-1,"SilverHeart":2,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]},
+{"name":"Ranger","movement":0,"fight_dice":1,"ranged_dice":3,"defence_dice":0,"armour":1,"initiative":1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[rangelong]},
+{"name":"Barbarian","movement":0,"fight_dice":3,"ranged_dice":0,"defence_dice":0,"armour":1,"initiative":-1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[]},
+{"name":"Paladin","movement":-1,"fight_dice":2,"ranged_dice":0,"defence_dice":1,"armour":1,"initiative":-2,"SilverHeart":1,"TotalWounds":0,"StartMana":1,"MaxMana":2,"specialRules":[spellcaster[healing]]},
+{"name":"Cleric","movement":0,"fight_dice":1,"ranged_dice":0,"defence_dice":1,"armour":1,"initiative":-1,"SilverHeart":1,"TotalWounds":0,"StartMana":4,"MaxMana":4,"specialRules":[spellcaster[healing,smite]]},
+{"name":"Rogue","movement":0,"fight_dice":1,"ranged_dice":2,"defence_dice":0,"armour":1,"initiative":1,"SilverHeart":1,"TotalWounds":0,"StartMana":0,"MaxMana":0,"specialRules":[rangeshort]},
+]
+}
